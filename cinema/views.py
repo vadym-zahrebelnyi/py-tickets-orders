@@ -1,8 +1,21 @@
-from django.db.models import Q, Count, ExpressionWrapper, F, IntegerField
+from django.db.models import (
+    Q,
+    Count,
+    ExpressionWrapper,
+    F,
+    IntegerField
+)
 from rest_framework import viewsets
 
 
-from cinema.models import Genre, Actor, CinemaHall, Movie, MovieSession, Order
+from cinema.models import (
+    Genre,
+    Actor,
+    CinemaHall,
+    Movie,
+    MovieSession,
+    Order
+)
 
 from cinema.serializers import (
     GenreSerializer,
